@@ -25,3 +25,39 @@ x is  undefined
 hii shammu    //the function is executing means hoisted
 x from outer scope undefined
 [Function: printing]
+
+//The scope of the variables
+
+const x=20
+a()
+b()
+console.log("x from local space is", x) // look for local var
+function a(){
+    var x=5
+    console.log(x)
+}  //gec vanished after execution
+
+
+function b(){
+    var x=10
+    console.log(x)
+} // gec is vanished after execution in call stack
+output:
+5
+10
+20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
