@@ -1,4 +1,5 @@
 
+
 var x=10
 function printing(){
     console.log("x is " , x)
@@ -7,3 +8,20 @@ function printing(){
 printing() //first execute this line
 console.log("x from outer scope", x)  // second executes this
 
+Hoisting
+
+// Hoisting in js is a feature to access the variables before they intialised
+
+printing()
+console.log("x from outer scope", x)                                      
+console.log(printing)
+var x=10
+function printing(){
+    console.log("x is " , x)
+    console.log("hii shammu")
+    }
+output  
+x is  undefined
+hii shammu    //the function is executing means hoisted
+x from outer scope undefined
+[Function: printing]
