@@ -1,1 +1,9 @@
 
+var x=10
+function printing(){
+    console.log("x is " , x)
+    
+}
+printing() //first execute this line
+console.log("x from outer scope", x)  // second executes this
+
