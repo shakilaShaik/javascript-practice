@@ -47,9 +47,24 @@ output:
 10
 20
 
+//the b is undefined the function is calling before and gec is created after the 
+a()
+const b=10
 
-
-
+function a(){
+    console.log("the var is ", b)
+}
+//lexical scope --- the scope where we can access the variables
+var b=10
+a()
+function a(){
+    // console.log("the var is ", b)
+    c()
+    
+    function c(){
+        console.log("the var from c", b)
+    }
+}
 
 
 
