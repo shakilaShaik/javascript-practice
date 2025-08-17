@@ -16,8 +16,8 @@ printing()
 console.log("x from outer scope", x)                                      
 console.log(printing)
 var x=10
-function printing(){
-    console.log("x is " , x)
+function printing(){                                        //doesnot work with arrow functions ,expressions because they stored as vars in GEC.
+    console.log("x is " , x)  
     console.log("hii shammu")
     }
 output  
