@@ -92,5 +92,12 @@ return b
 const c=a()()   // it remembers the lexical scope reference to that variable
 
 
-
-
+function x(){
+    
+    for(var i=0;i<5;i++){
+         setTimeout(function(){
+        console.log("i is", i)
+    }, i*1000)
+    }
+    }
+x()  // it prints all 5 because of the lexical scope and the reference shared by each function for execution is same
