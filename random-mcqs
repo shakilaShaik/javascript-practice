@@ -79,10 +79,17 @@ function b(){
 return b
 }
 const c=a()()
-
-
-
-
+//The function bundles with its lexical scope is called closure.
+function a(){
+    let  c=10
+function b(){
+    console.log("the c from outer function is" ,c)
+    
+}
+ c=100
+return b
+}
+const c=a()()   // it remembers the lexical scope reference to that variable
 
 
 
