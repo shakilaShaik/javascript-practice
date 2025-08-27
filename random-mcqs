@@ -101,3 +101,15 @@ function x(){
     }
     }
 x()  // it prints all 5 because of the lexical scope and the reference shared by each function for execution is same
+
+function x(){
+     for(var i=0;i<5;i++){
+        function y(i){
+            setTimeout(function(){
+        console.log("i is", i)
+    }, i*1000)
+    }
+    y(i)
+        }
+    }
+x()  
