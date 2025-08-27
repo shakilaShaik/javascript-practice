@@ -68,6 +68,17 @@ function a(){
 
 
 
+//The closure means the function remembers its lexical scope even after executing the outer funciom
+
+function a(){
+    const c=10
+function b(){
+    console.log("the c from outer function is" ,c)
+    
+}
+return b
+}
+const c=a()()
 
 
 
