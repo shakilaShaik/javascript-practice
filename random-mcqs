@@ -113,3 +113,14 @@ function x(){
         }
     }
 x()  
+
+
+The object and keys behaviour in javascript
+let a ={}
+let b={key:"b"}
+let c= {key:"c"}
+
+a[b]="first"
+a[c]="second"
+console.log(a[b])
+console.log(a)
